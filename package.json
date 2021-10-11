@@ -1,0 +1,35 @@
+{
+  "name": "react-redux",
+  "version": "1.0.0",
+  "description": "React-Redux",
+  "main": "index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "dotenv": "^10.0.0",
+    "mongodb-memory-server": "^7.4.3",
+    "mongoose": "^6.0.9"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "husky": "^7.0.2",
+    "jest": "^27.2.4",
+    "lint-staged": "^11.2.3"
+  }
+}
