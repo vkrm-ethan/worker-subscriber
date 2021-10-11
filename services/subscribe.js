@@ -5,8 +5,6 @@ const findOneAndUpdate = require("../mutation/findOneAndUpdateEvent");
 async function subscribe() {
   let response = await axios.get("/results");
 
-  const rest = "";
-
   console.log(response.status);
 
   if (response.status == 502) {
