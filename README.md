@@ -32,7 +32,7 @@ Events which are sent from the race simulator that runs a new race with six hors
 docker-compose up
 ```
   
-  #(or)
+  # (or)
   
 * Node Setup
 ```sh
